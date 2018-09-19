@@ -206,5 +206,6 @@
     // Errors
     NAME_VALERROR: "Name is required. It cannot exceed 60 characters and can contain letters, digits, spaces and some punctuation (including underscore, dash, brackets, period, apostrophe, and comma).",
     URL_VALERROR: "Please enter a valid host name.",
-    DESCRIPTION_VALERROR: "Description should not exceed 200 characters and can contain letters, digits, whitespace and some punctuation (including underscore, dash, brackets, period, apostrophe, and comma)."
+    DESCRIPTION_VALERROR: "Description should not exceed 200 characters and can contain letters, digits, whitespace and some punctuation (including underscore, dash, brackets, period, apostrophe, and comma).",
+    NESTEDHVM: "Nested virtualization"
 })

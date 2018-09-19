@@ -66,6 +66,7 @@ XenClient.UI.VMModel = function(vm_path) {
     this.restrict_resolution = false;
     this.totalVirtualDiskSpaceMB = 0;
     this.totalUtilizedDiskSpace = 0;
+    this.nestedhvm = false;
 
     this.powerClicked = false;
     this.lastTransferState = null;
@@ -158,7 +159,8 @@ XenClient.UI.VMModel = function(vm_path) {
         ["cmd_line",                            interfaces.vm],
         ["initrd",                              interfaces.vm],
         ["restrict_resolution",                 interfaces.vm,  "restrict-display-res"],
-        ["url",                                 interfaces.vm.get_domstore_key, interfaces.vm.set_domstore_key, "url"]
+        ["url",                                 interfaces.vm.get_domstore_key, interfaces.vm.set_domstore_key, "url"],
+        ["nestedhvm",                           interfaces.vm]
     ];
 
     var refreshIgnoreMap = [
